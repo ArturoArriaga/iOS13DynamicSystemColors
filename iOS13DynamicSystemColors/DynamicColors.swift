@@ -16,7 +16,7 @@ struct DynamicColor {
     let color: UIColor
 }
 
-//
+
 let labelColors = [
     DynamicColor(name: "label", description: "The color for text labels that contain primary content.", color: UIColor.label),
     DynamicColor(name: "secondaryLabel", description: "The color for text labels that contain secondary content.", color: UIColor.secondaryLabel),

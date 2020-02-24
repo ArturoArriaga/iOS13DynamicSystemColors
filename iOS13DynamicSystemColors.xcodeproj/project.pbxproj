@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59BB44DE2404893F00E91A30 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 59BB44DD2404893F00E91A30 /* README.md */; };
+		59BB44E324048A8000E91A30 /* dynamicColors.SS.png in Resources */ = {isa = PBXBuildFile; fileRef = 59BB44E224048A8000E91A30 /* dynamicColors.SS.png */; };
 		59DC71EF23FF8042001732EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC71EE23FF8042001732EF /* AppDelegate.swift */; };
 		59DC71F123FF8042001732EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC71F023FF8042001732EF /* SceneDelegate.swift */; };
 		59DC71F323FF8042001732EF /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DC71F223FF8042001732EF /* MainController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59BB44DD2404893F00E91A30 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		59BB44E224048A8000E91A30 /* dynamicColors.SS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dynamicColors.SS.png; sourceTree = "<group>"; };
 		59DC71EB23FF8042001732EF /* iOS13DynamicSystemColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS13DynamicSystemColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DC71EE23FF8042001732EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59DC71F023FF8042001732EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +45,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59BB44E1240489D000E91A30 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				59BB44E224048A8000E91A30 /* dynamicColors.SS.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		59DC71E223FF8042001732EF = {
 			isa = PBXGroup;
 			children = (
+				59BB44DD2404893F00E91A30 /* README.md */,
+				59BB44E1240489D000E91A30 /* Screenshots */,
 				59DC71ED23FF8042001732EF /* iOS13DynamicSystemColors */,
 				59DC71EC23FF8042001732EF /* Products */,
 			);
@@ -140,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				59DC71FB23FF8046001732EF /* LaunchScreen.storyboard in Resources */,
+				59BB44E324048A8000E91A30 /* dynamicColors.SS.png in Resources */,
 				59DC71F823FF8046001732EF /* Preview Assets.xcassets in Resources */,
+				59BB44DE2404893F00E91A30 /* README.md in Resources */,
 				59DC71F523FF8045001732EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
