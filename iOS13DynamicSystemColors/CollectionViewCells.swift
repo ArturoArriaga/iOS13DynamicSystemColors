@@ -56,6 +56,8 @@ class CollectionViewCell: UICollectionViewCell {
             self.colorNameLabel.text = dynamicColor.name
             self.colorDescriptionLabel.text = dynamicColor.description
             self.backgroundColor = dynamicColor.color
+            /* Uncomment to see how colors overlay each other */
+//            self.colorNameLabel.backgroundColor = dynamicColor.color
         }
     }
     
@@ -77,6 +79,7 @@ class CollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         self.addSubview(colorNameLabel)
         self.addSubview(colorDescriptionLabel)
+        
         NSLayoutConstraint.activate([
             colorNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             colorNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor),

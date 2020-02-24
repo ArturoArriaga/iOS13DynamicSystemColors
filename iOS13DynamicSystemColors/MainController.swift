@@ -14,10 +14,7 @@ class MainController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.backgroundColor = .systemBackground
-        registerCells()
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.title = "Dynamic Colors"
+        finishSetup()
     }
     
     init() {
@@ -67,6 +64,10 @@ extension MainController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as! CollectionViewCell
         switch indexPath.section {
         case 0:
+            if indexPath.item == 0 {
+                cell.colorNameLabel.textColor = .gray
+                cell.colorDescriptionLabel.textColor = .gray
+            }
             cell.dynamicColor = labelColors[indexPath.item]
         case 1:
             cell.dynamicColor = systemFillColors[indexPath.item]
@@ -89,6 +90,13 @@ extension MainController {
 
 //MARK: Finish Setup
 extension MainController {
+    fileprivate func finishSetup() {
+        self.collectionView.backgroundColor = .systemBackground
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "Dynamic Colors"
+        registerCells()
+    }
+    
     fileprivate func registerCells() {
         self.collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
         self.collectionView.register(HeaderCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCell.reuseIdentifier)
